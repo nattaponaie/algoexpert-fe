@@ -1,0 +1,28 @@
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+  animation-fill-mode: forwards;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.Navbar {
+  &__logo {
+    width: 40px;
+  }
+
+  &__logo:hover {
+    @include keyframes(fade) {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+    @include animate(fade, 1s, 1, linear);
+  }
+}
