@@ -13,8 +13,8 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/, // matches .css files only (i.e. not .scss, etc)
-        use: ['style-loader', 'css-loader'],
+        test: /\.(s(a|c)ss)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },

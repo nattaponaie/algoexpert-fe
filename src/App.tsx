@@ -5,7 +5,7 @@ export const App = hot(_App);
 export function _App(): JSX.Element | null {
   return (
     <div>
-      <h1>Hello world!</h1>
+      <p className="text-5xl">Hello world!</p>
     </div>
   );
 }
