@@ -2,9 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "types/*": ["./types/*"],
-      "components/*": ["./src/components/*"],
-      "pages/*": ["./src/pages/*"]
+      "types/*": ["./types/*"]
     },
     // https://www.sitepoint.com/react-with-typescript-best-practices/
     "allowJs": true, // Allow JavaScript files to be compiled
@@ -26,6 +24,6 @@
     "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
     "lib": ["dom", "es2019.array"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/**/*", "staticfiles/**/*", "frontend/dist/**/*"]
+  "include": ["src/**/*", "pages/**/*", "components/**/*"],
+  "exclude": ["node_modules/**/*", "dist/**/*"]
 }

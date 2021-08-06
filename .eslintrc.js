@@ -7,17 +7,6 @@ module.exports = {
       jsx: true, // Allows for the parsing of JSX
     },
   },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.d.ts', '.ts', '.tsx'],
-        moduleDirectory: ['node_modules', 'src/'],
-      },
-    },
-  },
   plugins: ['prettier', 'import', '@typescript-eslint'],
   extends: [
     'plugin:react/recommended',
@@ -30,6 +19,18 @@ module.exports = {
     'plugin:prettier/recommended', //should be at the last
     'prettier',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.d.ts', '.ts', '.tsx'],
+        path: ['src'],
+        moduleDirectory: ['node_modules', 'src'],
+      },
+    },
+  },
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
