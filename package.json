@@ -9,8 +9,8 @@
     "start": "NODE_ENV=development && npm run build:css && webpack serve --config webpack.dev.js --mode development",
     "build": "NODE_ENV=production && npm run build:css && webpack --config webpack.prod.js --env env=production",
     "build:css": "npx tailwindcss build -o src/styles/index.scss -c tailwind.config.js",
-    "lint": "eslint --cache \"src/**/*.{js,ts,tsx}\"",
-    "lint:fix": "eslint --cache --fix \"src/**/*.{js,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "dependencies": {
