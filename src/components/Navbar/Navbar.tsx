@@ -16,11 +16,22 @@ const Navbar = () => {
     </div>
   );
 
+  const renderMenuList = () => (
+    <div className="flex text-white">
+      <div className="px-2">Products</div>
+      <div className="px-2">Content</div>
+      <div className="px-2">Team</div>
+      <div className="px-2">Purchase</div>
+    </div>
+  );
+
+  const renderUser = () => <div className="text-white">John Doe</div>;
+
   return (
-    <div className="Navbar flex flex-row pt-4 pl-44 pr-44">
+    <div className="Navbar flex flex-row justify-between items-center pt-4">
       {renderCompanyBrand()}
-      <div>2</div>
-      <div>3</div>
+      {renderMenuList()}
+      {renderUser()}
     </div>
   );
 };

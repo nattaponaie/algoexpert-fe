@@ -5,7 +5,7 @@ import './Header.scss';
 
 const Header: React.FC = () => {
   return (
-    <div className="Header pl-32 pr-32">
+    <div className="Header pl-80 pr-80">
       <Navbar />
     </div>
   );
