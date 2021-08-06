@@ -1,4 +1,5 @@
 import React from 'react';
+
 import LazyLoad from 'react-lazyload';
 
 import './Navbar.scss';
@@ -8,7 +9,11 @@ const Navbar = () => {
     <div className="flex flex-col">
       <div className="flex justify-center items-center flex-row">
         <LazyLoad height={40}>
-          <img className="Navbar__logo pr-2" src="/images/rotate-logo.png" />
+          <img
+            className="Navbar__logo pr-2"
+            alt="logo"
+            src="/images/rotate-logo.png"
+          />
         </LazyLoad>
         <h1 className="text-white text-4xl">AlgoExpert</h1>
       </div>

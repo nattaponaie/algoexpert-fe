@@ -1,6 +1,8 @@
 import React, { Suspense } from 'react';
+
 import { hot } from 'react-hot-loader/root';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import routes from './routes';
 
 export const App = hot(_App);
